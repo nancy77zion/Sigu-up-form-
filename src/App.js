@@ -24,11 +24,11 @@ function App(props) {
   return (
     <main className="container">
       <form onSubmit={handleSubmit}>
-        <Inputs label={'First Name: '} icon={<BsFillPersonFill />} placeholder={'First Name'} type={'text'} name={'firstName'} value={inputs.firstName || ''} onChange={handleChange}/>
-        <Inputs label={'last Name: '}  icon={<BsFillPersonFill />} placeholder={'Last Name'} type={'text'} name={'lastName'} value={inputs.lastName || ''} onChange={handleChange}/>
-        <Inputs label={'Email: '}  icon={<BsFillEnvelopeFill />} placeholder={'Email Name'} type={'email'} name={'email'} value={inputs.email || ''} onChange={handleChange}/>
-        <Inputs label={'Password: '}  icon={<BsFillKeyFill />} placeholder={'Password'} type={'password'} name={'password'} value={inputs.password || ''} onChange={handleChange}/>
-        <Inputs label={'Mobile Number: '}  icon={<BsFillTelephoneFill />} placeholder={'Mobile Name'} type={'tel'} name={'tel'} value={inputs.tel || ''} onChange={handleChange}/>
+        <Inputs label={'First Name: '} icon={<BsFillPersonFill />} /*placeholder={'First Name'}*/ type={'text'} name={'firstName'} value={'firstName'} />
+        <Inputs label={'last Name: '}  icon={<BsFillPersonFill />} /*placeholder={'Last Name'}*/ type={'text'} name={'lastName'} value={'lastName'} />
+        <Inputs label={'Email: '}  icon={<BsFillEnvelopeFill />} /*placeholder={'Email Name'}*/ type={'email'} name={'email'} value={'email'} />
+        <Inputs label={'Password: '}  icon={<BsFillKeyFill />} /*placeholder={'Password'}*/ type={'password'} name={'password'} value={'password'} />
+        <Inputs label={'Mobile Number: '}  icon={<BsFillTelephoneFill />} /*placeholder={'Mobile Name'}*/ type={'tel'} name={'tel'} value={'tel'} />
         <div className="box radio">
 				  <label for="gender" class="fl fontLabel"> Gender: </label>
 				  <span><input type="radio" name="female" value={inputs.female || ''} onChange={handleChange} required /> Female</span> 
