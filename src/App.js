@@ -10,9 +10,9 @@ function App(props) {
   console.log(inputs);
 
   const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setInputs(values => ({...values, [name]: value}))
+    const names = event.target.name;
+    const values = event.target.value;
+    setInputs(val => ({...val, [names]: values}))
   }
 
   const handleSubmit = (event) => {
@@ -30,15 +30,15 @@ function App(props) {
         <Inputs label={'Password: '}  icon={<BsFillKeyFill />} /*placeholder={'Password'}*/ type={'password'} name={'password'} value={'password'} />
         <Inputs label={'Mobile Number: '}  icon={<BsFillTelephoneFill />} /*placeholder={'Mobile Name'}*/ type={'tel'} name={'tel'} value={'tel'} />
         <div className="box radio">
-				  <label for="gender" class="fl fontLabel"> Gender: </label>
+				  <label htmlFor='gender' className="fl fontLabel"> Gender: </label>
 				  <span><input type="radio" name="female" value={inputs.female || ''} onChange={handleChange} required /> Female</span> 
 				  <span><input type="radio" name="male" value={inputs.male || ''} onChange={handleChange} required /> Male</span>
 		    </div>
-        <div className="box terms">
+        <div className='box terms'>
 				  <span><input type="checkbox" name="terms" required/> I accept the terms and conditions</span>
 			  </div>
 			  <div className="box btn">
-				  <input type="submit" name="submit" id="submit" class="submit" />
+				  <input type="submit" name="submit" id="submit" className="submit" />
 			  </div>
       </form>
     </main>
