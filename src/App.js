@@ -31,11 +31,13 @@ function App(props) {
         <Inputs label={'Mobile Number: '}  icon={<BsFillTelephoneFill />} /*placeholder={'Mobile Name'}*/ type={'tel'} name={'tel'} value={'tel'} />
         <div className="box radio">
 				  <label htmlFor='gender' className="fl fontLabel"> Gender: </label>
-				  <span><input type="radio" name="female" value={inputs.female || ''} onChange={handleChange} required /> Female</span> 
-				  <span><input type="radio" name="male" value={inputs.male || ''} onChange={handleChange} required /> Male</span>
+          <div className='flexRadio'>
+				    <span><input type="radio" name="female" value={inputs.female || ''} onChange={handleChange} required /> Female</span> 
+				    <span><input type="radio" name="male" value={inputs.male || ''} onChange={handleChange} required /> Male</span>
+          </div>
 		    </div>
         <div className='box terms'>
-				  <span><input type="checkbox" name="terms" required/> I accept the terms and conditions</span>
+				  <span style={{ marginLeft: "80px" }}><input type="checkbox" name="terms" required/> I accept the terms and conditions</span>
 			  </div>
 			  <div className="box btn">
 				  <input type="submit" name="submit" id="submit" className="submit" />
