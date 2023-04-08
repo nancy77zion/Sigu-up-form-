@@ -10,3 +10,32 @@
 	margin: auto;
     padding: 70px 50px 20px 50px;
 }
+
+.btn {
+	background: #2d3e3f;
+}
+
+.radio{
+	color: white;
+	background: #2d3e3f;
+	line-height: 38px;
+}
+
+.terms{
+	line-height: 35px;
+	text-align: center;
+	background: #2d3e3f;
+	color: white;
+}
+
+.submit{
+	margin-left: 110px;
+	border: none;
+	color: white;
+	width: 110px;
+	height: 35px;
+	background: #ff6600;
+	text-transform: uppercase;
+    cursor: pointer;
+}
+

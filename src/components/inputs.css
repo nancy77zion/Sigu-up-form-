@@ -23,14 +23,6 @@
       clear: both;
   }
   
-  .box{
-      width: 360px;
-      height: 35px;
-      margin-top: 10px;
-      font-family: verdana;
-      font-size: 12px;
-  }
-  
   .textBox{
       height: 35px;
       width: 190px;
