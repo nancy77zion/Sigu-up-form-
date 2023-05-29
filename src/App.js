@@ -12,6 +12,7 @@ function App(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(JSON.stringify(inputs));
+    
   }
 
   const handleChange = (event) => {
